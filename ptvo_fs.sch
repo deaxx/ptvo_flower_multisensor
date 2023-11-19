@@ -13072,6 +13072,169 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 </deviceset>
 </devicesets>
 </library>
+<library name="W25Q80BVSNIG">
+<packages>
+<package name="SO-8">
+<description>&lt;b&gt;small outline&lt;/b&gt;</description>
+<wire x1="-1.8034" y1="1.7272" x2="-1.8034" y2="-2.9972" width="0.127" layer="21"/>
+<wire x1="-1.8034" y1="-2.9972" x2="1.8034" y2="-2.9972" width="0.127" layer="21"/>
+<wire x1="1.8034" y1="-2.9972" x2="1.8034" y2="1.7272" width="0.127" layer="21"/>
+<wire x1="1.8034" y1="1.7272" x2="-1.8034" y2="1.7272" width="0.127" layer="21"/>
+<circle x="-1.2446" y="1.1684" radius="0.3556" width="0.0508" layer="21"/>
+<text x="-2.032" y="-4.6355" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.032" y="2.0955" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.8702" y1="1.0922" x2="-1.8542" y2="1.4478" layer="27"/>
+<rectangle x1="-2.8702" y1="-0.1778" x2="-1.8542" y2="0.1778" layer="27"/>
+<rectangle x1="-2.8702" y1="-1.4478" x2="-1.8542" y2="-1.0922" layer="27"/>
+<rectangle x1="-2.8702" y1="-2.7178" x2="-1.8542" y2="-2.3622" layer="27"/>
+<rectangle x1="1.8542" y1="1.0922" x2="2.8702" y2="1.4478" layer="27"/>
+<rectangle x1="1.8542" y1="-0.1778" x2="2.8702" y2="0.1778" layer="27"/>
+<rectangle x1="1.8542" y1="-1.4478" x2="2.8702" y2="-1.0922" layer="27"/>
+<rectangle x1="1.8542" y1="-2.7178" x2="2.8702" y2="-2.3622" layer="27"/>
+<smd name="1" x="-3.3782" y="1.27" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="8" x="3.3782" y="1.27" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="2" x="-3.3782" y="0" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="3" x="-3.3782" y="-1.27" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="7" x="3.3782" y="0" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="6" x="3.3782" y="-1.27" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="4" x="-3.3782" y="-2.54" dx="2.286" dy="0.6096" layer="1"/>
+<smd name="5" x="3.3782" y="-2.54" dx="2.286" dy="0.6096" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="W25Q80BVSNIG">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="DI/IO0" x="-17.78" y="5.08" length="middle"/>
+<pin name="CLK" x="-17.78" y="2.54" length="middle"/>
+<pin name="HOLD/IO3" x="-17.78" y="0" length="middle"/>
+<pin name="VCC" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GND" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="WP/IO2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="DO/IO1" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="CS" x="17.78" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="W25Q80BVSNIG">
+<description> &lt;a href="https://pricing.snapeda.com/parts/W25Q80BVSNIG/Winbond%20Electronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="W25Q80BVSNIG" x="-2.54" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="SO-8">
+<connects>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="DI/IO0" pad="5"/>
+<connect gate="G$1" pin="DO/IO1" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="HOLD/IO3" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="WP/IO2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" FLASH - NOR Memory IC 8Mb (1M x 8) SPI - Quad I/O 104 MHz 8-SOIC "/>
+<attribute name="MF" value="Winbond Electronics"/>
+<attribute name="MP" value="W25Q80BVSNIG"/>
+<attribute name="PACKAGE" value="SOIC-8 Winbond"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="1wire">
+<description>&lt;h1&gt;Dallas/Maxim 1-Wire/iButton devices&lt;/h1&gt;
+&lt;p&gt;Onewire is a simple, low-cost bus system working with hundreds of devices on an up to 300m long one-wire (plus GND) bus system. It is relative slow (~16kBaud) but electrically undemanding, too. The onewire is hotplug-capable, if the host software supports it. The bus can be controlled by a single &amp;mu;C port pin or by special host adapter chips, which are available for RS232, Parallel, I&lt;sup&gt;2&lt;/sup&gt;C, and USB to onewire conversion. They are available as ready-to-run host adapter devices, too.&lt;/p&gt;
+&lt;p&gt;The chips on the bus can be powered through the bus line, this is called "parasite power". All neccesary circuit and capacities for parasite power are on chip. Some chips need an additional power source to provide all features.&lt;/p&gt;
+&lt;p&gt;iButton is an application for onewire devices, using special packaged onewire devices as keys or for data storage. All onewire chips have a unique serial number for technical reasons, and together with the hot-plug capability this makes them useable as unique keys. In addition, many onewire chips have additional memory (EPROM, EEPROM, RAM) on the chip, which can be used to store cryptographic keys. iButtons come in various packages which are protected against corrosive agents and weather influences.&lt;/p&gt;
+&lt;p&gt;Get more info at &lt;tt&gt;http://www.maxim-ic.com/1-Wire.cfm&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Linux driver at &lt;tt&gt;http://owfs.sf.net&lt;/tt&gt;&lt;/p&gt;
+&lt;h3&gt;Copyright notice:&lt;/h3&gt;
+&lt;p&gt;The devices in this library are copyrighted by various authors &amp;mdash; permission to use, distribute and modify this library is given to you at the terms of the LGPL. Copyright holders are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;&lt;/li&gt;
+&lt;li&gt;Giovanni Varasano &amp;lt;giovanni.varasano@fastwebnet.it&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The authorship for each device is given in the device notes.&lt;/p&gt;</description>
+<packages>
+<package name="UMAX8">
+<description>&lt;b&gt;micro MAX Package&lt;/b&gt;</description>
+<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.4" x2="-1.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-1.4" x2="-1.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-0.7" y1="-1.1" x2="-0.7" y2="-0.4" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-0.7" y1="-0.4" x2="-0.7" y2="-1.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="2" x="-0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="3" x="0.325" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="4" x="0.975" y="-2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="5" x="0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="6" x="0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="7" x="-0.325" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<smd name="8" x="-0.975" y="2.175" dx="0.45" dy="1.2" layer="1"/>
+<text x="-1.636" y="-2.286" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.906" y="-2.286" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1528" y1="-2.4036" x2="-0.7972" y2="-1.4384" layer="51"/>
+<rectangle x1="-0.5028" y1="-2.4036" x2="-0.1472" y2="-1.4384" layer="51"/>
+<rectangle x1="0.1472" y1="-2.4036" x2="0.5028" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="-2.4036" x2="1.1528" y2="-1.4384" layer="51"/>
+<rectangle x1="0.7972" y1="1.4384" x2="1.1528" y2="2.4036" layer="51"/>
+<rectangle x1="0.1472" y1="1.4384" x2="0.5028" y2="2.4036" layer="51"/>
+<rectangle x1="-0.5028" y1="1.4384" x2="-0.1472" y2="2.4036" layer="51"/>
+<rectangle x1="-1.1528" y1="1.438396875" x2="-0.7972" y2="2.403596875" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DS18B20U">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="DQ" x="-12.7" y="7.62" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle" direction="pwr"/>
+<pin name="VDD" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<text x="-6.096" y="3.048" size="1.778" layer="94">DS18B20U</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS18S20" prefix="IC">
+<description>&lt;h2&gt;High Precision Digital Thermometer&lt;/h2&gt;
+&lt;p&gt;This chip provides a onewire thermosensor with approx. 0.5°C accuracy.A programmable over/undertemperure alarm is available.&lt;/p&gt;
+&lt;h3&gt;Notes:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Vdd must be applied for accurate measurements at low temperatures, as the parasite power circuit otherwise heats the sensor.&lt;/li&gt;
+&lt;li&gt;If parasite power is used, Vdd has to be connected to GND.&lt;/li&gt;
+&lt;li&gt;The DS1822 is a low-cost thermometer chip, the DS18B20 is similar to the DS18S20, but with 9..12 Bit programmable precision.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Author:&lt;/h3&gt;
+Jan Kandziora &amp;lt;jjj@gmx.de&amp;gt;</description>
+<gates>
+<gate name="G$1" symbol="DS18B20U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="USOP8" package="UMAX8">
+<connects>
+<connect gate="G$1" pin="DQ" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13096,7 +13259,7 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V"/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214BA" package3d_urn="urn:adsk.eagle:package:43453/2"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO214BA" package3d_urn="urn:adsk.eagle:package:43453/2" value="PTSMD3528"/>
 <part name="R3" library="adafruit4" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1" value="10k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13122,6 +13285,18 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <part name="SWITCH" library="SPST Round Button" deviceset="SKRKAEE010" device=""/>
 <part name="SWITCH1" library="SPST Round Button" deviceset="SKRKAEE010" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$2" library="W25Q80BVSNIG" deviceset="W25Q80BVSNIG" device="" value="IS25LP080D"/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R5" library="adafruit4" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1" value="2.2k"/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V"/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V"/>
+<part name="C6" library="adafruit2" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="100nF"/>
+<part name="IC1" library="1wire" deviceset="DS18S20" device="USOP8"/>
+<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V"/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C5" library="adafruit2" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="100nF"/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13168,7 +13343,6 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 </instance>
 <instance part="D1" gate="G$1" x="63.5" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="63.0174" y="45.72" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="65.8114" y="45.72" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R3" gate="G$1" x="63.5" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="61.976" y="33.02" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -13249,6 +13423,40 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 </instance>
 <instance part="GND9" gate="1" x="78.74" y="7.62" smashed="yes">
 <attribute name="VALUE" x="76.2" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="261.62" y="43.18" smashed="yes"/>
+<instance part="GND10" gate="1" x="238.76" y="25.4" smashed="yes">
+<attribute name="VALUE" x="236.22" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="GND24" gate="1" x="284.48" y="53.34" smashed="yes" rot="R180">
+<attribute name="VALUE" x="287.02" y="55.88" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R5" gate="G$1" x="289.56" y="40.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="289.56" y="39.116" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="+3V6" gate="G$1" x="302.26" y="40.64" smashed="yes" rot="R270">
+<attribute name="VALUE" x="294.64" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V7" gate="G$1" x="233.68" y="40.64" smashed="yes" rot="R90">
+<attribute name="VALUE" x="236.22" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="238.76" y="35.56" smashed="yes">
+<attribute name="NAME" x="239.776" y="36.195" size="1.778" layer="95"/>
+<attribute name="VALUE" x="239.776" y="31.369" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="G$1" x="264.16" y="12.7" smashed="yes"/>
+<instance part="+3V8" gate="G$1" x="279.4" y="25.4" smashed="yes">
+<attribute name="VALUE" x="279.4" y="25.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="246.38" y="7.62" smashed="yes">
+<attribute name="VALUE" x="243.84" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="279.4" y="15.24" smashed="yes">
+<attribute name="NAME" x="280.416" y="15.875" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.416" y="11.049" size="1.778" layer="96"/>
+</instance>
+<instance part="GND12" gate="1" x="279.4" y="5.08" smashed="yes">
+<attribute name="VALUE" x="276.86" y="2.54" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13342,6 +13550,28 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <wire x1="78.74" y1="15.24" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="279.4" y1="48.26" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="284.48" y1="48.26" x2="284.48" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="27.94" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="251.46" y1="12.7" x2="246.38" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="12.7" x2="246.38" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="279.4" y1="10.16" x2="279.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="D14" class="0">
 <segment>
@@ -13395,12 +13625,41 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="208.28" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="40.64" x2="299.72" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<wire x1="236.22" y1="40.64" x2="238.76" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="40.64" x2="243.84" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="40.64" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
+<junction x="238.76" y="40.64"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<wire x1="276.86" y1="20.32" x2="279.4" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="20.32" x2="279.4" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="20.32" x2="279.4" y2="17.78" width="0.1524" layer="91"/>
+<junction x="279.4" y="20.32"/>
+</segment>
 </net>
 <net name="D07" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DIO7"/>
 <wire x1="116.84" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
 <label x="106.68" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="CS"/>
+<wire x1="279.4" y1="40.64" x2="284.48" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<label x="279.4" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -13477,14 +13736,14 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 </net>
 <net name="D08" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="45.72" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
-<label x="53.34" y="53.34" size="1.778" layer="95" rot="R270"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="DIO8"/>
 <wire x1="116.84" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <label x="106.68" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="DO/IO1"/>
+<wire x1="279.4" y1="43.18" x2="284.48" y2="43.18" width="0.1524" layer="91"/>
+<label x="279.4" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
@@ -13492,6 +13751,11 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <pinref part="U$1" gate="G$1" pin="DIO10"/>
 <wire x1="116.84" y1="25.4" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
 <label x="106.68" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="DI/IO0"/>
+<wire x1="243.84" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="91"/>
+<label x="236.22" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -13575,6 +13839,11 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <pinref part="J2" gate="G$1" pin="12"/>
 <wire x1="208.28" y1="17.78" x2="215.9" y2="17.78" width="0.1524" layer="91"/>
 <label x="210.82" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="45.72" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<label x="53.34" y="48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D24" class="0">
@@ -13660,6 +13929,11 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <wire x1="208.28" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
 <label x="210.82" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="DQ"/>
+<wire x1="251.46" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<label x="246.38" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D17" class="0">
 <segment>
@@ -13685,6 +13959,18 @@ Source: &lt;a href="http://www.mouser.com/ds/2/15/SKRK-1110686.pdf"&gt; Datashee
 <pinref part="U$1" gate="G$1" pin="RES"/>
 <pinref part="SWITCH1" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D9" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="CLK"/>
+<wire x1="243.84" y1="45.72" x2="236.22" y2="45.72" width="0.1524" layer="91"/>
+<label x="236.22" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="DIO9"/>
+<wire x1="116.84" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<label x="106.68" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
