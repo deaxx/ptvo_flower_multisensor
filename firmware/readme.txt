@@ -1,0 +1,1 @@
+https://ptvo.info/download/ptvo-firmware-latest.zip
