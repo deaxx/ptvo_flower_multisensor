@@ -12772,6 +12772,96 @@ reflow soldering</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="bosch-bme280">
+<description>Combined humidity and pressure sensor</description>
+<packages>
+<package name="BME280">
+<description>2.5 mm x 2.5 mm x 0.93 mm metal lid LGA</description>
+<smd name="6" x="-0.325" y="1.025" dx="0.35" dy="0.5" layer="1"/>
+<smd name="7" x="0.325" y="1.025" dx="0.35" dy="0.5" layer="1"/>
+<smd name="8" x="0.975" y="1.025" dx="0.35" dy="0.5" layer="1"/>
+<smd name="5" x="-0.975" y="1.025" dx="0.35" dy="0.5" layer="1"/>
+<smd name="2" x="0.325" y="-1.025" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<smd name="3" x="-0.325" y="-1.025" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<smd name="4" x="-0.975" y="-1.025" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<smd name="1" x="0.975" y="-1.025" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<wire x1="-1.25" y1="1.1" x2="-1.1" y2="1.25" width="0.05" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="1.25" x2="1.05" y2="1.25" width="0.05" layer="21"/>
+<wire x1="1.05" y1="1.25" x2="1.1" y2="1.25" width="0.05" layer="21"/>
+<wire x1="1.1" y1="1.25" x2="1.25" y2="1.1" width="0.05" layer="21" curve="-90"/>
+<wire x1="1.25" y1="1.1" x2="1.25" y2="-1.05" width="0.05" layer="21"/>
+<wire x1="1.25" y1="-1.05" x2="1.25" y2="-1.1" width="0.05" layer="21"/>
+<wire x1="1.25" y1="-1.1" x2="1.1" y2="-1.25" width="0.05" layer="21" curve="-90"/>
+<wire x1="1.1" y1="-1.25" x2="-1.05" y2="-1.25" width="0.05" layer="21"/>
+<wire x1="-1.05" y1="-1.25" x2="-1.1" y2="-1.25" width="0.05" layer="21"/>
+<wire x1="-1.1" y1="-1.25" x2="-1.25" y2="-1.1" width="0.05" layer="21" curve="-90"/>
+<wire x1="-1.25" y1="-1.1" x2="-1.25" y2="1.1" width="0.05" layer="21"/>
+<wire x1="-1" y1="1.1" x2="-1.1" y2="1" width="0.02" layer="21" curve="90"/>
+<wire x1="-1.1" y1="1" x2="-1.1" y2="-1" width="0.02" layer="51"/>
+<wire x1="-1.1" y1="-1" x2="-1" y2="-1.1" width="0.02" layer="21" curve="90"/>
+<wire x1="-1" y1="-1.1" x2="1" y2="-1.1" width="0.02" layer="51"/>
+<wire x1="1" y1="-1.1" x2="1.1" y2="-1" width="0.02" layer="21" curve="90"/>
+<wire x1="1.1" y1="-1" x2="1.1" y2="1" width="0.02" layer="51"/>
+<wire x1="1.1" y1="1" x2="1" y2="1.1" width="0.02" layer="21" curve="90"/>
+<wire x1="1" y1="1.1" x2="-1" y2="1.1" width="0.02" layer="51"/>
+<circle x="0.95" y="-0.5" radius="0.1" width="0.05" layer="21"/>
+<text x="0" y="0" size="0.254" layer="51" align="center">HUMIDITY
+PRESSURE
+SENSOR</text>
+<text x="-1.25" y="1.4" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.2" y="-1.75" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-1.25" y1="1.25" x2="1.25" y2="1.25" width="0.01" layer="39"/>
+<wire x1="1.25" y1="1.25" x2="1.25" y2="-1.25" width="0.01" layer="39"/>
+<wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.01" layer="39"/>
+<wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.01" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BME280">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VDDIO" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="CSB" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="SDO" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="SDI" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-7.366" y="8.382" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BME280" prefix="IC">
+<description>DIGITAL HUMIDITY, PRESSURE AND TEMPERATURE SENSOR&lt;br&gt;* Digital interface I²C (up to 3.4 MHz) and SPI (3 and 4 wire, up to 10 MHz)* Supply voltage VDD main supply voltage range: 1.71 V to 3.6 V*VDDIO interface voltage range: 1.2 V to 3.6 V&lt;br&gt;
+Operating range -40…+85 °C, 0…100 % rel. humidity, 300…1100 hPa
+&lt;br&gt;&lt;br&gt;
+
+The library has been designed by&lt;a href="https://www.facebook.com/groups/eaglecadsoftUK"&gt; Richard Magdycz&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BME280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BME280">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12834,12 +12924,15 @@ reflow soldering</description>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="ok-discretes-dev" deviceset="CAP" device="-0402" value="6p8"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="IC2" library="bosch-bme280" deviceset="BME280" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="+3V"/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="215.9" y1="81.28" x2="246.38" y2="58.42" width="0.6096" layer="94"/>
-<wire x1="218.44" y1="58.42" x2="243.84" y2="81.28" width="0.6096" layer="94"/>
+<wire x1="254" y1="81.28" x2="284.48" y2="58.42" width="0.6096" layer="94"/>
+<wire x1="256.54" y1="58.42" x2="281.94" y2="81.28" width="0.6096" layer="94"/>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="119.38" y="53.34" smashed="yes">
@@ -12882,8 +12975,8 @@ reflow soldering</description>
 <instance part="GND3" gate="1" x="76.2" y="38.1" smashed="yes">
 <attribute name="VALUE" x="73.66" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="236.22" y="17.78" smashed="yes">
-<attribute name="VALUE" x="233.68" y="15.24" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="274.32" y="17.78" smashed="yes">
+<attribute name="VALUE" x="271.78" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="66.04" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.516" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -12905,44 +12998,44 @@ reflow soldering</description>
 <attribute name="NAME" x="49.276" y="20.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="49.276" y="16.129" size="1.778" layer="96"/>
 </instance>
-<instance part="TP3" gate="G$1" x="132.08" y="22.86" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="24.13" size="1.778" layer="97" rot="R90"/>
+<instance part="TP3" gate="G$1" x="170.18" y="22.86" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="24.13" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP4" gate="G$1" x="132.08" y="20.32" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="21.59" size="1.778" layer="97" rot="R90"/>
+<instance part="TP4" gate="G$1" x="170.18" y="20.32" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="21.59" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP5" gate="G$1" x="132.08" y="17.78" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="19.05" size="1.778" layer="97" rot="R90"/>
+<instance part="TP5" gate="G$1" x="170.18" y="17.78" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="19.05" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP6" gate="G$1" x="132.08" y="15.24" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="16.51" size="1.778" layer="97" rot="R90"/>
+<instance part="TP6" gate="G$1" x="170.18" y="15.24" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="16.51" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="TP7" gate="G$1" x="132.08" y="12.7" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="13.97" size="1.778" layer="97" rot="R90"/>
+<instance part="TP7" gate="G$1" x="170.18" y="12.7" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="13.97" size="1.778" layer="97" rot="R90"/>
 </instance>
-<instance part="GND8" gate="1" x="139.7" y="7.62" smashed="yes">
-<attribute name="VALUE" x="137.16" y="5.08" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="177.8" y="7.62" smashed="yes">
+<attribute name="VALUE" x="175.26" y="5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="142.24" y="15.24" smashed="yes" rot="R270">
-<attribute name="VALUE" x="139.7" y="15.24" size="1.778" layer="96" rot="R180"/>
+<instance part="+3V4" gate="G$1" x="180.34" y="15.24" smashed="yes" rot="R270">
+<attribute name="VALUE" x="177.8" y="15.24" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="TP8" gate="G$1" x="132.08" y="25.4" smashed="yes" rot="R90">
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="26.67" size="1.778" layer="97" rot="R90"/>
+<instance part="TP8" gate="G$1" x="170.18" y="25.4" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" x="171.45" y="26.67" size="1.778" layer="97" rot="R90"/>
 </instance>
 <instance part="C4" gate="G$1" x="109.22" y="53.34" smashed="yes">
 <attribute name="NAME" x="110.236" y="53.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.236" y="49.149" size="1.778" layer="96"/>
 </instance>
-<instance part="SWITCH" gate="G$1" x="213.36" y="22.86" smashed="yes">
-<attribute name="NAME" x="223.5493" y="27.954640625" size="1.78313125" layer="95" align="center"/>
-<attribute name="VALUE" x="223.5411" y="17.76943125" size="1.7817" layer="96" align="center"/>
+<instance part="SWITCH" gate="G$1" x="251.46" y="22.86" smashed="yes">
+<attribute name="NAME" x="261.6493" y="27.954640625" size="1.78313125" layer="95" align="center"/>
+<attribute name="VALUE" x="261.6411" y="17.76943125" size="1.7817" layer="96" align="center"/>
 </instance>
-<instance part="SWITCH1" gate="G$1" x="157.48" y="48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="147.2907" y="43.165359375" size="1.78313125" layer="95" rot="R180" align="center"/>
-<attribute name="VALUE" x="147.2989" y="53.35056875" size="1.7817" layer="96" rot="R180" align="center"/>
+<instance part="SWITCH1" gate="G$1" x="195.58" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="185.3907" y="43.165359375" size="1.78313125" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="185.3989" y="53.35056875" size="1.7817" layer="96" rot="R180" align="center"/>
 </instance>
-<instance part="GND9" gate="1" x="134.62" y="40.64" smashed="yes">
-<attribute name="VALUE" x="132.08" y="38.1" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="172.72" y="40.64" smashed="yes">
+<attribute name="VALUE" x="170.18" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$1" x="83.82" y="15.24" smashed="yes"/>
 <instance part="+3V8" gate="G$1" x="99.06" y="27.94" smashed="yes">
@@ -12961,48 +13054,58 @@ reflow soldering</description>
 <instance part="Q1" gate="G$1" x="101.6" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="101.6" y="63.502209375" size="1.77955" layer="95"/>
 </instance>
-<instance part="U2" gate="G$1" x="185.42" y="40.64" smashed="yes">
-<attribute name="NAME" x="170.18" y="79.375" size="1.778" layer="95"/>
-<attribute name="VALUE" x="170.18" y="0" size="1.778" layer="96"/>
+<instance part="U2" gate="G$1" x="223.52" y="40.64" smashed="yes">
+<attribute name="NAME" x="208.28" y="79.375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.28" y="0" size="1.778" layer="96"/>
 </instance>
 <instance part="BT1" gate="G$1" x="93.98" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="97.79" y="54.61" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="+3V2" gate="G$1" x="160.02" y="76.2" smashed="yes" rot="R90">
-<attribute name="VALUE" x="160.02" y="73.66" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V2" gate="G$1" x="198.12" y="76.2" smashed="yes" rot="R90">
+<attribute name="VALUE" x="198.12" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U1" gate="G$1" x="25.4" y="17.78" smashed="yes">
 <attribute name="NAME" x="15.24" y="30.48" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="15.24" y="5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="160.02" y="0" smashed="yes">
-<attribute name="VALUE" x="157.48" y="-2.54" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="198.12" y="0" smashed="yes">
+<attribute name="VALUE" x="195.58" y="-2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="210.82" y="0" smashed="yes">
-<attribute name="VALUE" x="208.28" y="-2.54" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="248.92" y="0" smashed="yes">
+<attribute name="VALUE" x="246.38" y="-2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="Y1" gate="G$1" x="231.14" y="73.66" smashed="yes">
-<attribute name="NAME" x="229.87" y="76.2" size="1.778" layer="95"/>
+<instance part="Y1" gate="G$1" x="269.24" y="73.66" smashed="yes">
+<attribute name="NAME" x="267.97" y="76.2" size="1.778" layer="95"/>
 </instance>
-<instance part="GND13" gate="1" x="228.6" y="63.5" smashed="yes">
-<attribute name="VALUE" x="226.06" y="60.96" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="266.7" y="63.5" smashed="yes">
+<attribute name="VALUE" x="264.16" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="233.68" y="63.5" smashed="yes">
-<attribute name="VALUE" x="231.14" y="60.96" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="271.78" y="63.5" smashed="yes">
+<attribute name="VALUE" x="269.24" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="A" x="223.52" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="227.457" y="70.6374" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="222.377" y="70.6374" size="1.778" layer="96" rot="R180"/>
+<instance part="C9" gate="A" x="261.62" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="265.557" y="70.6374" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="260.477" y="70.6374" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND20" gate="1" x="223.52" y="63.5" smashed="yes">
-<attribute name="VALUE" x="220.98" y="60.96" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="261.62" y="63.5" smashed="yes">
+<attribute name="VALUE" x="259.08" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="A" x="238.76" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="242.697" y="70.6374" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="237.617" y="70.6374" size="1.778" layer="96" rot="R180"/>
+<instance part="C6" gate="A" x="276.86" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="280.797" y="70.6374" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="275.717" y="70.6374" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND15" gate="1" x="238.76" y="63.5" smashed="yes">
-<attribute name="VALUE" x="236.22" y="60.96" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="276.86" y="63.5" smashed="yes">
+<attribute name="VALUE" x="274.32" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="IC2" gate="G$1" x="142.24" y="25.4" smashed="yes">
+<attribute name="NAME" x="134.874" y="33.782" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="134.62" y="15.24" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="+3V5" gate="G$1" x="142.24" y="48.26" smashed="yes">
+<attribute name="VALUE" x="139.7" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="GND16" gate="1" x="127" y="7.62" smashed="yes">
+<attribute name="VALUE" x="124.46" y="5.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13044,20 +13147,20 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="TP7" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="12.7" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="12.7" x2="139.7" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="12.7" x2="177.8" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="12.7" x2="177.8" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SWITCH" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="22.86" x2="236.22" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="22.86" x2="274.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="236.22" y1="22.86" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="22.86" x2="274.32" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SWITCH1" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="48.26" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="48.26" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="48.26" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="48.26" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13103,41 +13206,52 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="165.1" y1="5.08" x2="160.02" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="5.08" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="5.08" x2="198.12" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="5.08" x2="198.12" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND2"/>
-<wire x1="205.74" y1="5.08" x2="210.82" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="5.08" x2="210.82" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="5.08" x2="248.92" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="5.08" x2="248.92" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="Y1" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="228.6" y1="66.04" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="66.04" x2="266.7" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Y1" gate="G$1" pin="4"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="233.68" y1="66.04" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="66.04" x2="271.78" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="A" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="223.52" y1="68.58" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="68.58" x2="261.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C6" gate="A" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="238.76" y1="68.58" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="68.58" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="129.54" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="127" y1="20.32" x2="127" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="127" y1="10.16" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="10.16" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="SDO"/>
+<wire x1="157.48" y1="20.32" x2="154.94" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<junction x="127" y="10.16"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="TP6" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="15.24" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -13164,7 +13278,7 @@ reflow soldering</description>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="162.56" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
@@ -13175,6 +13289,23 @@ reflow soldering</description>
 <wire x1="48.26" y1="22.86" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
 <junction x="48.26" y="25.4"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VDDIO"/>
+<wire x1="157.48" y1="27.94" x2="154.94" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="CSB"/>
+<wire x1="129.54" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="25.4" x2="127" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="127" y1="30.48" x2="127" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="127" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="40.64" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
+<wire x1="129.54" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
+<junction x="127" y="30.48"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="142.24" y1="45.72" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<junction x="142.24" y="40.64"/>
+</segment>
 </net>
 <net name="D11" class="0">
 <segment>
@@ -13184,20 +13315,20 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_11"/>
-<wire x1="165.1" y1="38.1" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
-<label x="157.48" y="38.1" size="1.778" layer="95"/>
+<wire x1="203.2" y1="38.1" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
+<label x="195.58" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMS" class="0">
 <segment>
 <pinref part="TP3" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
-<label x="134.62" y="22.86" size="1.778" layer="95"/>
+<wire x1="172.72" y1="22.86" x2="177.8" y2="22.86" width="0.1524" layer="91"/>
+<label x="172.72" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="TMSC"/>
-<wire x1="165.1" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
-<label x="157.48" y="30.48" size="1.778" layer="95"/>
+<wire x1="203.2" y1="30.48" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<label x="195.58" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -13209,44 +13340,44 @@ reflow soldering</description>
 <net name="TCK" class="0">
 <segment>
 <pinref part="TP8" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="25.4" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
-<label x="134.62" y="25.4" size="1.778" layer="95"/>
+<wire x1="172.72" y1="25.4" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
+<label x="172.72" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="TCKC"/>
-<wire x1="165.1" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
-<label x="157.48" y="27.94" size="1.778" layer="95"/>
+<wire x1="203.2" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
+<label x="195.58" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="TP5" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<label x="137.16" y="17.78" size="1.778" layer="95"/>
+<wire x1="172.72" y1="17.78" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
+<label x="175.26" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_2"/>
-<wire x1="205.74" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="210.82" y="43.18" size="1.778" layer="95"/>
+<wire x1="243.84" y1="43.18" x2="251.46" y2="43.18" width="0.1524" layer="91"/>
+<label x="248.92" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
 <pinref part="TP4" gate="G$1" pin="TP"/>
-<wire x1="134.62" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
-<label x="137.16" y="20.32" size="1.778" layer="95"/>
+<wire x1="172.72" y1="20.32" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<label x="175.26" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_3"/>
-<wire x1="165.1" y1="66.04" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
-<label x="157.48" y="66.04" size="1.778" layer="95"/>
+<wire x1="203.2" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<label x="195.58" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D24" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_24"/>
-<wire x1="205.74" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="208.28" y="50.8" size="1.778" layer="95"/>
+<wire x1="243.84" y1="50.8" x2="251.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="246.38" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -13257,8 +13388,8 @@ reflow soldering</description>
 <net name="D23" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_23"/>
-<wire x1="205.74" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
-<label x="208.28" y="48.26" size="1.778" layer="95"/>
+<wire x1="243.84" y1="48.26" x2="251.46" y2="48.26" width="0.1524" layer="91"/>
+<label x="246.38" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
@@ -13277,8 +13408,8 @@ reflow soldering</description>
 <net name="RST" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RESET_N"/>
-<wire x1="205.74" y1="22.86" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
-<label x="208.28" y="22.86" size="1.778" layer="95"/>
+<wire x1="243.84" y1="22.86" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<label x="246.38" y="22.86" size="1.778" layer="95"/>
 <pinref part="SWITCH" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -13298,8 +13429,13 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_5"/>
-<wire x1="165.1" y1="60.96" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
-<label x="157.48" y="60.96" size="1.778" layer="95"/>
+<wire x1="203.2" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
+<label x="195.58" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="SCK"/>
+<wire x1="154.94" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="157.48" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -13310,15 +13446,20 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_4"/>
-<wire x1="165.1" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
-<label x="157.48" y="63.5" size="1.778" layer="95"/>
+<wire x1="203.2" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="91"/>
+<label x="195.58" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="SDI"/>
+<wire x1="154.94" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<label x="157.48" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_13"/>
 <pinref part="SWITCH1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="48.26" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D28" class="0">
@@ -13329,15 +13470,15 @@ reflow soldering</description>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_28"/>
-<wire x1="205.74" y1="60.96" x2="213.36" y2="60.96" width="0.1524" layer="91"/>
-<label x="208.28" y="60.96" size="1.778" layer="95"/>
+<wire x1="243.84" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
+<label x="246.38" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D01" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_1"/>
-<wire x1="205.74" y1="40.64" x2="213.36" y2="40.64" width="0.1524" layer="91"/>
-<label x="208.28" y="40.64" size="1.778" layer="95"/>
+<wire x1="243.84" y1="40.64" x2="251.46" y2="40.64" width="0.1524" layer="91"/>
+<label x="246.38" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -13348,8 +13489,8 @@ reflow soldering</description>
 <net name="D25" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="DIO_25"/>
-<wire x1="205.74" y1="53.34" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="208.28" y="53.34" size="1.778" layer="95"/>
+<wire x1="243.84" y1="53.34" x2="251.46" y2="53.34" width="0.1524" layer="91"/>
+<label x="246.38" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -13362,22 +13503,22 @@ reflow soldering</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="205.74" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="76.2" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="76.2" x2="276.86" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="76.2" x2="276.86" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="3"/>
 <pinref part="C6" gate="A" pin="2"/>
-<wire x1="238.76" y1="73.66" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
-<junction x="238.76" y="73.66"/>
+<wire x1="276.86" y1="73.66" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
+<junction x="276.86" y="73.66"/>
 <pinref part="U2" gate="G$1" pin="X48M-N"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="205.74" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="73.66" x2="261.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C9" gate="A" pin="2"/>
-<junction x="223.52" y="73.66"/>
+<junction x="261.62" y="73.66"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="73.66" x2="266.7" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="X48N-P"/>
 </segment>
 </net>
@@ -13387,6 +13528,10 @@ reflow soldering</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
