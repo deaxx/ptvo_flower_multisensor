@@ -1,5 +1,5 @@
 
-![Top layer](/CC2652RB/ptvo_fs.png)
+![Top layer](/CC2652RB/ptvo_fs.jpg)
 
 ### Components:
 E72-2G4M05S1F - https://aliexpress.ru/item/1005006060110453.html
