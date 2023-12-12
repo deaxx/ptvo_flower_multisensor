@@ -1,3 +1,3 @@
 # PTVO Flower multiSensor
 
-![Top layer](./ptvo_fs.png)
+![Top layer](./ptvo_fs.jpg)
