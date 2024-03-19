@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2024-03-19T17:49:37Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 0.2413,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "ptvo_fs"
+        },
+        "Owner": "  <>",
+        "Size": {
+            "X": 99.95,
+            "Y": 25.475
+        }
+    }
+}
